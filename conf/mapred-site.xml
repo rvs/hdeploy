@@ -1,8 +1,118 @@
-<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
 
-<!-- Put site-specific property overrides in this file. -->
+       http://www.apache.org/licenses/LICENSE-2.0
 
-<configuration>
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
 
+  <property>
+    <name>mapred.job.tracker</name>
+    <value>h10.grid.sp2.yahoo.net:8123</value>
+  </property>
+
+  <property>
+    <name>mapred.local.dir</name>
+    <value>/grid/0/mapred,/grid/1/mapred,/grid/2/mapred,/grid/3/mapred</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>mapred.child.java.opts</name>
+    <value>-Xmx1024m</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobtracker.staging.root.dir</name>
+    <value>/user</value>
+  </property>
+
+  <property>
+    <name>mapred.system.dir</name>
+    <value>/mapred/system</value>
+  </property>
+
+  <property>
+    <name>mapred.child.ulimit</name>
+    <value>1572864</value>
+  </property>
+
+  <property>
+    <name>io.sort.mb</name>
+    <value>256</value>
+  </property>
+  
+  <property>
+    <name>io.sort.factor</name>
+    <value>64</value>
+  </property>
+
+  <property>
+    <name>mapred.job.tracker.handler.count</name>
+    <value>10</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>mapred.map.tasks.speculative.execution</name>
+    <value>true</value>
+  </property>
+  
+  <property>
+    <name>mapred.reduce.parallel.copies</name>
+    <value>5</value>
+  </property>
+
+  <property>
+    <name>mapred.reduce.tasks</name>
+    <value>36</value>
+  </property>
+
+  <property>
+    <name>mapred.reduce.tasks.speculative.execution</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>mapred.tasktracker.map.tasks.maximum</name>
+    <value>12</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>mapred.tasktracker.reduce.tasks.maximum</name>
+    <value>3</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>tasktracker.http.threads</name>
+    <value>60</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>mapred.output.compression.type</name>
+    <value>BLOCK</value>
+  </property>
+
+  <property>
+    <name>mapred.compress.map.output</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>mapreduce.map.output.compress</name>
+    <value>false</value>
+  </property>
 </configuration>
