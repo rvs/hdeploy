@@ -16,6 +16,7 @@
    limitations under the License.
 -->
 
+<configuration>
   <property>
     <name>mapred.job.tracker</name>
     <value>h10.grid.sp2.yahoo.net:8123</value>
