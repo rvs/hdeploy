@@ -29,7 +29,7 @@ function bail() {
 USAGE="Usage: deploy-from-tar.sh <file-system-location> [zip URL]"
 
 SELF=`dirname "${BASH_SOURCE-$0}"`
-SELF=`cd "$bin"; pwd`
+#SELF=`cd "$bin"; pwd`
 
 #. "$bin"/hdfs-config.sh
 
