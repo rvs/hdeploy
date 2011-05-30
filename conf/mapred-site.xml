@@ -35,7 +35,7 @@
 
   <property>
     <name>mapreduce.jobtracker.staging.root.dir</name>
-    <value>/user</value>
+    <value>/tmp/system</value>
   </property>
 
   <property>
