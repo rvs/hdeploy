@@ -65,7 +65,7 @@
   </property>
 
   <property>
-    <name>mapred.map.tasks.speculative.execution</name>
+    <name>mapreduce.job.maps.speculative.execution</name>
     <value>true</value>
   </property>
   
